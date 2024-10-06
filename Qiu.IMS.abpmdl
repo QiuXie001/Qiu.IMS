@@ -1,0 +1,85 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.Account": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "8.3.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Qiu.IMS.Application": {
+      "path": "src/Qiu.IMS.Application/Qiu.IMS.Application.abppkg",
+      "folder": "src"
+    },
+    "Qiu.IMS.Application.Tests": {
+      "path": "test/Qiu.IMS.Application.Tests/Qiu.IMS.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Qiu.IMS.Domain.Shared": {
+      "path": "src/Qiu.IMS.Domain.Shared/Qiu.IMS.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Qiu.IMS.Application.Contracts": {
+      "path": "src/Qiu.IMS.Application.Contracts/Qiu.IMS.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Qiu.IMS.HttpApi": {
+      "path": "src/Qiu.IMS.HttpApi/Qiu.IMS.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Qiu.IMS.HttpApi.Client": {
+      "path": "src/Qiu.IMS.HttpApi.Client/Qiu.IMS.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Qiu.IMS.EntityFrameworkCore.Tests": {
+      "path": "test/Qiu.IMS.EntityFrameworkCore.Tests/Qiu.IMS.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Qiu.IMS.EntityFrameworkCore": {
+      "path": "src/Qiu.IMS.EntityFrameworkCore/Qiu.IMS.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Qiu.IMS.TestBase": {
+      "path": "test/Qiu.IMS.TestBase/Qiu.IMS.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Qiu.IMS.Domain.Tests": {
+      "path": "test/Qiu.IMS.Domain.Tests/Qiu.IMS.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Qiu.IMS.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Qiu.IMS.HttpApi.Client.ConsoleTestApp/Qiu.IMS.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Qiu.IMS.DbMigrator": {
+      "path": "src/Qiu.IMS.DbMigrator/Qiu.IMS.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "Qiu.IMS.HttpApi.Host": {
+      "path": "src/Qiu.IMS.HttpApi.Host/Qiu.IMS.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "Qiu.IMS.Domain": {
+      "path": "src/Qiu.IMS.Domain/Qiu.IMS.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

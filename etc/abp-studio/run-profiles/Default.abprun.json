@@ -1,0 +1,23 @@
+﻿{
+  "applications": {
+    "Qiu.IMS.HttpApi.Host": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44301",
+      "path": "../../../src/Qiu.IMS.HttpApi.Host/Qiu.IMS.HttpApi.Host.csproj",
+      "kubernetesService": ".*-httpapihost$",
+      "execution": {
+        "order": 4
+      }
+    },
+    "Qiu.IMS.Angular": {
+      "type": "cli",
+      "workingDirectory": "../../../angular",
+      "startCommand": "./start.ps1",
+      "launchUrl": "http://localhost:4200",
+      "kubernetesService": ".*-angular$",
+      "execution": {
+        "order": 2
+      }    
+    }
+  }
+}

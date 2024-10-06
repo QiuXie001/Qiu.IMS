@@ -1,0 +1,40 @@
+{
+  "id": "7b257df6-b8a2-4855-9170-5e4d94118953",
+  "template": "app",
+  "versions": {
+    "AbpFramework": "8.3.0",
+    "AbpStudio": "0.8.3"
+  },
+  "modules": {
+    "Qiu.IMS": {
+      "path": "Qiu.IMS.abpmdl"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/abp-studio/run-profiles/Default.abprun.json"
+    }
+  },
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": [
+        "^/metrics$"
+      ]
+    }
+  },
+  "creatingStudioConfiguration": {
+    "template": "app",
+    "createdAbpStudioVersion": "0.8.3",
+    "tiered": "false",
+    "uiFramework": "angular",
+    "databaseProvider": "ef",
+    "databaseManagementSystem": "sqlserver",
+    "separateTenantSchema": "false",
+    "theme": "basic",
+    "themeStyle": "",
+    "mobileFramework": "none",
+    "progressiveWebApp": "false",
+    "publicWebsite": "false",
+    "socialLogin": ""
+  }
+}
