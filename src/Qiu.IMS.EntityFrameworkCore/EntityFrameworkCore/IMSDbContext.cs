@@ -69,6 +69,9 @@ public class IMSDbContext :
 
         /* Include modules to your migration db context */
 
+        AbpCommonDbProperties.DbSchema = "dbo.";
+        AbpCommonDbProperties.DbTablePrefix = "Core_";
+
         builder.ConfigurePermissionManagement();
         builder.ConfigureSettingManagement();
         builder.ConfigureBackgroundJobs();

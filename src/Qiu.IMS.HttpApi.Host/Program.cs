@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
+using Volo.Abp.Data;
+using Volo.Abp.PermissionManagement;
 
 namespace Qiu.IMS;
 
@@ -14,6 +16,8 @@ public class Program
     {
         try
         {
+            AbpCommonDbProperties.DbSchema = "dbo.";
+            AbpCommonDbProperties.DbTablePrefix = "Core_";
             Log.Information("Starting Qiu.IMS.HttpApi.Host.");
             var builder = WebApplication.CreateBuilder(args);
             builder.Host
@@ -36,6 +40,7 @@ public class Program
                 });
             await builder.AddApplicationAsync<IMSHttpApiHostModule>();
             var app = builder.Build();
+            // 管道
             await app.InitializeApplicationAsync();
             await app.RunAsync();
             return 0;
@@ -51,7 +56,7 @@ public class Program
             return 1;
         }
         finally
-        {
+        {        
             Log.CloseAndFlush();
         }
     }
